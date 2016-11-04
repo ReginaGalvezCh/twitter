@@ -19,12 +19,7 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
 
-     /*hace que items de la lista unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+
 
 /* hace q las entradas esten diferenciadas y no del mismo color(zebra-stripes) */
 ul li:nth-child(odd) {
