@@ -19,7 +19,7 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
 
-
+}
 
 /* hace q las entradas esten diferenciadas y no del mismo color(zebra-stripes) */
 ul li:nth-child(odd) {
