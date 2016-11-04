@@ -1,0 +1,119 @@
+
+
+/* incluye el padding y bording en el total del  heigth y width del elemento*/
+* {
+    box-sizing: border-box;
+}
+
+/* remueve margenes de la lista */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* el estilo de la lista de tareas*/
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+     /*hace que items de la lista unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* hace q las entradas esten diferenciadas y no del mismo color(zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* con hover otor color*/
+ul li:hover {
+    background: #ddd;
+}
+
+/* nos tacha el item seleccionado y cambia el bgcolor */
+ul li.checked {
+    background: #888;
+    color: #536374;
+    text-decoration: line-through;
+}
+
+/* nos da un visto cuando lo marcamos */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* estilo cerrarse btn */
+.cerrar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px
+}
+
+.cerrar:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* estilo hdr */
+.app {
+    background-color: #278AF7;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+/* elimina floats despues del header */
+.app:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* estilo input */
+input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: #101214;
+}
+
+/* estilo del btn agregar*/
+.agregar {
+    padding: 10px;
+    width: 25%;
+    background: #DAE2E9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.agregar:hover {
+    background-color: #bbb;
+}
+/*sidescroll */
+.bar{  
+overflow-y: scroll;
+    height: 300px; 
+}
